@@ -1,0 +1,73 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{刘天伟}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{123-4567-8910}{liutianweidlut@qq.com}{8年工作经验|系统架构|平台开发}{1987.8}
+
+\section{教育经历}
+\datedsubsection{\textbf{大连理工大学} \quad 软件工程(本科),创新院-计算机应用技术(硕士)}{2006.9 - 2013.6}
+
+\section{工作经历}
+\datedsubsection{\textbf{旷视}  \quad 主任架构师(T5.1)}{2017.9-今} 
+\begin{itemize}
+	\item 同时担任中台-平台开发部、算法产品部-基础平台，两个团队的Leader，团队规模40人。
+\end{itemize}
+\begin{itemize}
+  \item \textbf{私有云平台DevOps}：自研容器编排、集群自动化运维、自定义交付包等核心功能，解决ToB领域、私有化、重交付场景所面临的各种问题，实现标准化交付、自动化运维和最佳实践开箱即用。4年时间里，完成1000个以上国内外项目的实施，支持多个BG 10个以上产品线的应用托管和落地，是旷视所有私有化项目的基础要素。
+	\item \textbf{私有化交付工具链MDT}：以私有云DevOps平台为核心，构建包括BootOS(自定义OS发行版)、SDC(软件包托管)、DevOps-Swarm(多集群管理)、DevOps-Import(运维巡检)、编排托管、ATP(自动化测试)等工具，实现旷视完整的面向ToB/ToG的私有化项目交付工具链，实现高效、标准化交付。
+  \item \textbf{云原生PaaS平台MCD}：面向全体研发，在混合云/私有云/边缘计算场景下，基于k8s构建的application概念，提供CI和周边基础设施，形成内部完善的、面向云原生的、GitOps驱动的PaaS平台。上线1年，实现1300+个应用的托管，是旷视跨BG使用最多的一个基础技术平台。
+  \item \textbf{旷视加密授权体系}：基于CodeMeter和Sentinel LDK商业产品，构建统一、安全、全场景的加密授权方案与平台，承载旷视内部所有加密授权需求。
+  \item \textbf{研发效能平台Pipeline}：基于Tekton和k8s，参考Github Action产品思路，实现内部的CI基础设施，与Gitlab、MCD、Brain++等无缝衔接，每日构建300-400次。
+  \item \textbf{AI生产力平台Brain++}：基于k8s，提供workspace/rlanuch/rrun/rjob等训练方式的抽象、100PB的底层OSS存储和相关基础设施。集群规模4000台机器、13000张显卡，托管内部所有训练服务，并对外进行商业化尝试。
+\end{itemize}
+\begin{itemize}
+  \item 旷视CBG、中台技术部、算法产品部技术委员会成员(2019.9-今)，负责晋升评审、平台类项目规划、立项评审、高潜T导师等工作。
+	\item 从0-1搭建平台组，4年间经历从CoreTeam IC、CoreTeam DevOps组leader、CBG平台开发部leader到公司级中台-平台开发部leader的变化，实现平台型工具在旷视内部影响力的最大化。2021.1接管Brain++团队，完成年度技术规划、目标梳理和团队重构，并协助其获得BG内2021H1优秀团队。
+	\item 在旷视4次年度考评中3次A绩效(A为最高档)，2020.9由T4.2跨级晋升到T5.1。
+\end{itemize}
+
+\datedsubsection{\textbf{豆瓣} \quad 高级系统软件工程师}{2013.7-2017.9}
+\begin{itemize}
+  \item 平台组，Python，DAE核心开发。DAE是豆瓣内部的PaaS平台，托管豆瓣所有的服务。
+  \item 负责DAE中在线和离线任务AutoScale调度、集群扩缩容机制、Cron/Daemon/MQ/Admin等离线任务的设计与实现，主导DAE容器化改造和DAE Python Framework的开发。
+  \item 全站HTTP 502报警首要响应人，处理大量线上故障；负责豆瓣第三方网站爬虫服务。
+\end{itemize}
+
+\datedsubsection{\textbf{微软} \quad 实习生}{2012.7-2012.10}
+\begin{itemize}
+  \item BingDesktop组，负责定制浏览器的调研与实现，包括类VIM快捷键、网页阅读模式、预加载机制等。
+\end{itemize}
+
+\datedsubsection{\textbf{Google Summer of Code} \quad 实习生}{2012.3-2013.4}
+\begin{itemize}
+  \item UMIT组，Python。Remote方式与多国同事协同开发的针对网络审查监控的开源项目OpenMonitor，负责Desktop Agent部分，包括搭建P2P网络、设计Dashboard/SoftwareUpdate/BugReport等。
+\end{itemize}
+
+\section{分享|技能}
+\begin{itemize}
+    \item 2016 \quad \textbf{Docker在豆瓣的实践 } - 灵雀云Docker Meetup
+    \item 2017 \quad \textbf{容器化技术在豆瓣微服务化中的实践 } - Women Who Code走进豆瓣活动
+    \item 2020 \quad \textbf{旷视城市大脑的私有云平台建设及稳定性保障} - GOPS全球运维大会
+    \item 2021 \quad \textbf{旷视AI产品背后的研发效能体系建设} - EE卓越工程生产力大会
+\end{itemize}
+\begin{itemize}
+    \item 丰富的在线debug和解决问题经历，工作语言Python/Golang/JS，积极关注Rust。
+		\item 对PaaS/DevOps/k8s/研发效能/AI生产力平台/云原生等保持一贯的热爱，良好的平台型工具产品思维。
+		\item 大量的在公司内部推广、布道基础平台经历，对多团队合作、平台型组织运作有着深入的认知。
+		\item 目标绩效、梯队建设等管理工具熟练掌握，崇尚教练式技术，5年中小技术团队管理经验(3-50人)。
+\end{itemize}
+
+\end{document}
